@@ -1,0 +1,32 @@
+<div class="text-banner">
+    <h2>Check Out Pictures of Different Dog Breeds!</h2>
+</div>
+<div class="content-container">
+    <div>
+        <select formControlName="breed-selector-dropdown" 
+                (change)="selectBreed($event)">
+            <option value="" disabled selected>Select a breed</option>
+            <option *ngFor="let breed of (breeds$ | async)" [value]="breed">
+                {{ breed }}
+            </option>
+        </select>
+        <div *ngIf="showDogDisplay" class="text-column">
+            <h2>{{ selectedBreed }}</h2>
+            <!-- <p> -->
+                <div [innerHTML]="selectedBreedDescription"></div>
+
+            <!-- </p> -->
+        </div>
+    </div>  
+    <div *ngIf="showDogDisplay" class="dog-display">
+        
+        <div *ngIf="breedImageUrls && breedImageUrls.length > 0" class="photo-grid">
+            <img *ngFor="let image of visibleImages; let i = index" 
+            [src]="image" 
+            alt="Dog photo" 
+            class="photo"
+            [attr.data-index]="i"
+            #photoObserver>
+        </div>
+    </div>
+</div>

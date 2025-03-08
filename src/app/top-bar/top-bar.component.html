@@ -1,0 +1,15 @@
+<div class="top-bar">
+    <div class="logo-title">
+        <a routerLink="/" class="title-link">
+          <h1 class="title">Dog World</h1>
+        </a>
+    </div>
+    <div class="navigation-menu">
+      <div class="menu">
+        <button (click)="toggleDropdown()" class="menu-button">⋮</button>
+        <ul *ngIf="dropdownOpen" class="dropdown">
+          <li><a routerLink="/dogs" (click)="toggleDropdown()">Dogs</a></li>
+        </ul>
+      </div>
+    </div>
+</div>

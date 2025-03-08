@@ -1,0 +1,72 @@
+.text-banner {
+    background-color: #f8f9fa; /* Optional: Light background for the text */
+    padding: 24px;
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-banner h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.content-container {
+    max-width: auto;
+    margin: 50px 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Photo grid takes 2/3 width, text column 1/3 */
+    
+  }
+
+.content-container div {
+  margin: 20px;
+}
+  
+/* Style the dropdown */
+.breed-selector-dropdown {
+  width: 50%; /* Adjust to your desired width */
+  max-width: 300px; /* Prevent it from being too wide */
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  appearance: none; /* Remove default dropdown styles */
+  text-align: center;
+}
+
+.text-column {
+  background-color: #f8f9fa; /* Optional: Light background for the text */
+  padding: 20px;
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+.text-column h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px; /* Adjust for spacing between images */
+  justify-content: center;
+}
+
+.photo {
+  width: 100%; /* Makes images responsive */
+  height: auto;
+  object-fit: cover; /* Ensures images are cropped correctly within their container */
+  border-radius: 8px; /* Optional, for rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional, for shadow effects */
+}
+
+
