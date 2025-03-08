@@ -12,7 +12,7 @@ export class DogService {
      A production app would need an organizational account and tokenize this key 
      The app will still work, but will lack the AI generated breed description.
    */
-  private geminiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBmkN1KhRhts2kaH1CZ43pVMOJfglsOt8c';
+  private geminiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=***masked***';
 
   constructor(private http: HttpClient) { }
 
